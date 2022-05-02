@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    transition: .4s all ease-in-out;
+}
+
+html:root {
+    --primary-color: rgb(0, 167, 223);
+    --hover-color: rgb(0, 136, 182);
+    --dark-color: rgb(97, 97, 97);
+    --light: white;
+    --lightdark-color: rgb(206, 206, 206);
+    --border: 1px solid var(--lightdark-color);
+}
+
+html.dark:root {
+    --primary-color: rgb(0, 167, 223);
+    --hover-color: rgb(0, 136, 182);
+    --dark-color: rgb(255, 255, 255);
+    --light: rgb(43, 43, 43);
+    --lightdark-color: rgb(88, 88, 88);
+    --border: 1px solid var(--lightdark-color);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Poppins;
+    color: var(--dark-color);
+    background: var(--light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    color: white;
+}

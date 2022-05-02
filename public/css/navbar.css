@@ -1,0 +1,46 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: var(--border);
+}
+
+.navbar .logo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icons .theme {
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 5px;
+    color: var(--dark-color);
+}
+
+.navbar .icons .theme:hover {
+    color: var(--primary-color);
+}
+
+.navbar .icons .github {
+    margin-right: 20px;
+}
+
+.navbar .icons .github svg {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    fill: var(--dark-color);
+}
+
+.navbar .icons .github svg:hover {
+    fill: var(--primary-color);
+}
