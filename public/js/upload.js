@@ -37,7 +37,7 @@ dropBox.addEventListener("drop", (e) => {
 
 fileInput.addEventListener("change", () => uploadFile());
 
-const uploadFile = () => {
+const uploadFile = async () => {
   progressBox.style.display = "flex";
   if (fileInput.files.length > 1) {
     alert("Please upload one file only");
