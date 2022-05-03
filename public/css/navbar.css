@@ -8,7 +8,8 @@
     border-bottom: var(--border);
 }
 
-.navbar .logo h1 {
+.navbar .logo a {
+    text-decoration: none;
     font-size: 40px;
     font-weight: bold;
     color: var(--primary-color);
