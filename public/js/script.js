@@ -1,5 +1,4 @@
 const toast = (message) => {
-  console.log("click");
   const toastBox = document.querySelector("#toast");
   const toastInput = document.querySelector("#toastInput");
   toastInput.value = message;
@@ -13,7 +12,6 @@ const toast = (message) => {
 // theme mode
 function theme() {
   const theme = localStorage.getItem("theme");
-  console.log("clicked");
   if (theme === "dark") {
     localStorage.setItem("theme", "light");
   } else {

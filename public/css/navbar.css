@@ -18,30 +18,27 @@
 .navbar .icons {
     display: flex;
     align-items: center;
-}
-
-.navbar .icons .theme {
-    cursor: pointer;
     font-size: 40px;
-    margin-top: 5px;
-    color: var(--dark-color);
 }
 
-.navbar .icons .theme:hover {
-    color: var(--primary-color);
+.navbar .icons .icon {
+    font-size: 45px !important;
+    display: flex;
+    align-items: center;
 }
 
-.navbar .icons .github {
-    margin-right: 20px;
+.navbar .icons a {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.navbar .icons .github svg {
-    height: 40px;
-    width: 40px;
+
+
+.navbar .icons .iconify {
     cursor: pointer;
-    fill: var(--dark-color);
 }
 
-.navbar .icons .github svg:hover {
-    fill: var(--primary-color);
+.navbar .icons .iconify:hover {
+    color: var(--primary-color);
 }

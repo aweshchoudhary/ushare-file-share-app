@@ -46,9 +46,10 @@ const uploadFile = async () => {
     const formData = new FormData();
     formData.append("myfile", file);
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = () => {
+    xhr.onreadystatechange = async () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        showLink(JSON.parse(xhr.response));
+        const res = await JSON.parse(xhr.response);
+        showLink(res);
         toast("Your file was uploaded.");
       }
     };

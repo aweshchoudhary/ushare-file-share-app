@@ -1,0 +1,48 @@
+@media screen and (max-width: 940px) {
+    .upload-section {
+        flex-direction: column;
+    }
+
+    .upload-section .card {
+        width: 100%;
+    }
+
+    .upload-section .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #toast {
+        width: 90%;
+    }
+
+    .download-section {
+        padding: 50px 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .upload-section {
+        padding: 50px 10px;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar .icons .iconify {
+        font-size: 30px;
+    }
+
+    .navbar .logo a {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+}

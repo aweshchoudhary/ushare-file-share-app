@@ -1,15 +1,21 @@
 <section class="download-section">
     <% if(!error){ %>
-        <div class="card download-card">
-            <h1>Your file is ready to download</h1>
-            <p style="text-align: center;">Link expires in 24 hours</p>
-            <p class="filename">
-                <%= fileName %>
-            </p>
-            <p class="filesize">
-                Size: <%= parseInt(fileSize/1000) %> KB
-            </p>
-            <a href="<%= download %>" onclick="toast('File downloaded')" class="btn">Download File</a>
+        <div class="download-card">
+            <div class="top">
+                <h1>Your file is ready to download</h1>
+                <p style="text-align: center;">Link expires in 24 hours</p>
+            </div>
+            <div class="body">
+                <p class="filename">
+                    <%= fileName %>
+                </p>
+                <p class="filesize">
+                    Size: <%= parseInt(fileSize/1000) %> KB
+                </p>
+            </div>
+            <div class="bottom">
+                <a href="<%= download %>" onclick="toast('File downloaded')" class="btn">Download File</a>
+            </div>
         </div>
         <% }else{ %>
             <div class="card">
